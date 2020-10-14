@@ -1,0 +1,27 @@
+<!--          <<<<<<<<<<<ĐỀ BÀI>>>>>>>>>>>>>>
+    Dùng vòng lặp While, viết hàm tính tổng các số chia hết cho 3 trong khoảng từ 0 đến n
+        Test thử với n = 300, 500, 1000
+
+
+-->
+
+<html>
+	<head>	
+	</head>
+	<body>
+		<script>
+            var n = prompt('Hãy Nhập số n:');
+            count = 0;
+            var i =0;
+            while(i <= parseInt(n)){
+                if(i%3 == 0){
+                    count = count +i;
+                }
+                i++;
+            }
+            document.write('Tổng số N chia hết cho 3 là :' + count.toString())
+
+ 
+		</script>
+	</body>
+</html>
