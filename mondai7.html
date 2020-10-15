@@ -11,16 +11,34 @@
 	<body>
 		<script>
 			var n = prompt('Hãy Nhập Số N　:');
-			if(n<2){
-				document.write('N không phải số nguyên tố');
-			}	
-			for(i = 2; i <=n/2; i++){
-				if(n % i == 0){
-					document.write('N không phải số nguyên tố');
+			
+			 var kiemtra = true;
+				if (n < 2){
+					kiemtra = false;
 				}
+				else if (n == 2){
+					kiemtra = true;
+				}
+				else if (n % 2 == 0){
+					kiemtra = false;
+				}
+				else{
 				
-			}
-			document.write('N là số nguyên tố');	
+					for (var i = 3; i < Math.sqrt(n); i+=2)
+					{
+						if (n % i == 0){
+							kiemtra = false;
+							break;
+						}
+					}
+				}
+				if (kiemtra == true){
+					document.write(n + " là số nguyên tố <br/>");
+				}
+				else{
+					document.write(n + " không phải là số nguyên tố <br/>");
+				}
+			
 		</script>
 	</body>
 </html>
