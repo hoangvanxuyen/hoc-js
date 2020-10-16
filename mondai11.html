@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=., initial-scale=1.0">
+    <link rel="stylesheet" href="css/mondai11.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="header">
+        <div class="box1">
+            <img onclick="myFunction1()" src="img/anh1.jpg" alt="" width="120px" height="120px">
+            <img onclick="myFunction2()" src="img/anh2.jpg" alt="" width="120px" height="120px">
+            <img onclick="myFunction3()" src="img/anh3.jpg" alt="" width="120px" height="120px">
+            <img onclick="myFunction4()" src="img/anh4.jpg" alt="" width="120px" height="120px">         
+        </div>
+        <div class="box2">
+            <img id="img" src="img/anh1.jpg" alt="" >
+        </div>
+    </div>
+</body>
+<script>
+
+ function myFunction1(){
+    document.getElementById("img").setAttribute("src","img/anh1.jpg");
+ }
+ function myFunction2(){
+    document.getElementById("img").setAttribute("src","img/anh2.jpg");
+ }
+ function myFunction3(){
+    document.getElementById("img").setAttribute("src","img/anh3.jpg");
+ }
+ function myFunction4(){
+    document.getElementById("img").setAttribute("src","img/anh4.jpg");
+ }
+</script>
+</html>
